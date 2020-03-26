@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>mx.com.teclo</groupId>
+  <artifactId>teclo-reporte-build</artifactId>
+  <packaging>pom</packaging>
+  <version>${revision}</version>
+  <name>Modulo base de los reportes</name>
+  
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.4.0.RELEASE</version>
+    <relativePath/> <!-- lookup parent from repository -->
+  </parent>
+
+  <properties>
+    <tecloframework.version>o.4.0.3</tecloframework.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <java.version>1.7</java.version>
+    <revision>v100r1</revision>
+    <teclo.reporte.ws>v100r1</teclo.reporte.ws>
+  </properties>
+
+  <repositories>
+    <repository>
+      <id>codelds</id>
+      <url>https://code.lds.org/nexus/content/groups/main-repo</url>
+    </repository>
+  </repositories>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <configuration>
+          <packagingExcludes>
+            WEB-INF/lib/logback-*.jar,
+            WEB-INF/lib/slf4j-log4j12*.jar,
+          </packagingExcludes>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+            </manifest>
+          </archive>
+          <outputDirectory>C:\WarsMaven\</outputDirectory>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <modules>
+    <module>teclo-reporte-app</module>
+    <module>teclo-reporte-api</module>
+    <module>teclo-reporte-jar</module>
+    <module>teclo-reporte-jar-taq</module>
+    <module>teclo-reporte-recursos</module>
+  </modules>
+</project>

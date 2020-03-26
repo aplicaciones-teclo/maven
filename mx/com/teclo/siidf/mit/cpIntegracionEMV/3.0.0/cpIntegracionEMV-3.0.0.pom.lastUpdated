@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Nov 18 11:08:28 CST 2016
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1479488908883
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact mx.com.teclo.siidf.mit\:cpIntegracionEMV\:pom\:3.0.0 from/to central (https\://repo.maven.apache.org/maven2)\: Hostname repo.maven.apache.org not verified\:\n    certificate\: sha1/V0wBGC9ecbyMSnsklJPNpGo/yTM\=\n    DN\: CN\=repo1.maven.org, O\="Sonatype, Inc", L\=Fulton, ST\=MD, C\=US\n    subjectAltNames\: [repo1.maven.org]

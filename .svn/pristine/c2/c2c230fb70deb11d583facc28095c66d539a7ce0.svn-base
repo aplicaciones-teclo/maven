@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Aug 01 13:52:27 CDT 2018
+https\://code.lds.org/nexus/content/groups/main-repo/.error=Could not transfer artifact mx.com.teclo\:teclo-security\:jar\:sources\:o.3.2.7 from/to codelds (https\://code.lds.org/nexus/content/groups/main-repo)\: connect timed out
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1533149547997
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact mx.com.teclo\:teclo-security\:jar\:sources\:o.3.2.7 from/to central (https\://repo.maven.apache.org/maven2)\: connect timed out
+@default-codelds-https\://code.lds.org/nexus/content/groups/main-repo/.lastUpdated=1533149537923

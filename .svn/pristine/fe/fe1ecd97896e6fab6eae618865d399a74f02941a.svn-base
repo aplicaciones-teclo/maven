@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>mx.com.teclomexicana</groupId>
+  <artifactId>embarque-resource</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20160530232255</lastUpdated>
+  </versioning>
+</metadata>

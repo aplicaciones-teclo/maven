@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>mx.com.teclo</groupId>
+  <artifactId>siye-build</artifactId>
+  <versioning>
+    <release>v100r1</release>
+    <versions>
+      <version>v100r1</version>
+    </versions>
+    <lastUpdated>20200326221239</lastUpdated>
+  </versioning>
+</metadata>

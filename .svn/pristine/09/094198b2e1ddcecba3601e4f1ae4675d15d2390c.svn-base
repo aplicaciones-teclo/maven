@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>mx.com.teclo</groupId>
+  <artifactId>teclo-excel</artifactId>
+  <versioning>
+    <release>o.4.0.4</release>
+    <versions>
+      <version>3.2.1</version>
+      <version>3.2.2</version>
+      <version>s.3.2.2</version>
+      <version>o.3.2.3</version>
+      <version>o.3.2.4</version>
+      <version>s.3.2.3</version>
+      <version>s.3.2.5</version>
+      <version>o.3.2.5</version>
+      <version>o.4.0.1</version>
+      <version>o.3.2.8</version>
+      <version>o.4.0.3</version>
+      <version>o.4.0.4</version>
+    </versions>
+    <lastUpdated>20200304214839</lastUpdated>
+  </versioning>
+</metadata>

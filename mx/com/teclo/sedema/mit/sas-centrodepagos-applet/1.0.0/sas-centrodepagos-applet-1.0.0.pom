@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>mx.com.teclo.sedema.mit</groupId>
+		<artifactId>sas-centropagos</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<artifactId>sas-centrodepagos-applet</artifactId>
+	<name>sas-centrodepagos-applet</name>
+	<url>http://maven.apache.org</url>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>mx.com.teclo.sedema.mit</groupId>
+			<artifactId>sas-centrodepagos-transaction</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>mx.com.teclo.sedema.mit</groupId>
+			<artifactId>java-plugin</artifactId>
+			<version>1.6.0.23</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.6.3</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<finalName>appcp_v100</finalName>
+		<defaultGoal>install</defaultGoal>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>			
+				<!--Descomentar esta versión cuando se omite la firma de codigo-->
+				<!-- <version>3.0.2</version> -->
+				<!--Este se omite para la firma de codigo INICIO-->
+				<executions>
+					<execution>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+				<!--Este se omite para la firma de codigo FIN-->
+				<configuration>
+					<archive>
+						<addMavenDescriptor>false</addMavenDescriptor>
+						<index>true</index>
+						<manifest>
+							<addClasspath>true</addClasspath>
+						</manifest>
+						<manifestEntries>
+							<Permissions>all-permissions</Permissions>
+						</manifestEntries>
+					</archive>
+					<!--Este se omite para la firma de codigo INICIO-->
+					<keystore>src/main/resources/keystore/signing-teclo-jar.keystore</keystore>
+					<alias>SiidfMit</alias>
+					<storepass>teclomexicana</storepass>
+					<verify>true</verify>
+					<!--Este se omite para la firma de codigo FIN-->
+				</configuration>
+			</plugin>
+
+			
+
+		</plugins>
+	</build>
+</project>

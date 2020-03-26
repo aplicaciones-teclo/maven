@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>mx.com.teclo</groupId>
+	<artifactId>TecloFrameworkSupport</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<springSecurity.version>3.2.0.RELEASE</springSecurity.version>
+		<spring.version>3.2.6.RELEASE</spring.version>
+		<log4j.version>1.2.16</log4j.version>
+		<teclo.version>o.3.2.8</teclo.version>
+	</properties>
+
+
+	<build>
+
+		<defaultGoal>install</defaultGoal>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+
+		</plugins>
+
+	</build>
+
+
+	<modules>
+		<module>Teclo-Generaexcel</module>
+		<module>Teclo-Mensajeria</module>
+		<module>Teclo-Exception</module>
+		<module>Teclo-Security</module>
+		<module>Teclo-Auditoria</module>
+
+	</modules>
+</project>
