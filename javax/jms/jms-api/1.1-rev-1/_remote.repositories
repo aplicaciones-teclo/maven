@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Mon Mar 09 17:05:26 CST 2020
+#Wed Apr 01 20:08:33 CST 2020
 jms-api-1.1-rev-1.jar>central=
 jms-api-1.1-rev-1.pom>central=
+jms-api-1.1-rev-1-sources.jar>central=

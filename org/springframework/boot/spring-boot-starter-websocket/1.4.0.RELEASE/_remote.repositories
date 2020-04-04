@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Apr 02 03:10:50 CST 2020
+spring-boot-starter-websocket-1.4.0.RELEASE-sources.jar>central=
+spring-boot-starter-websocket-1.4.0.RELEASE.jar>central=
+spring-boot-starter-websocket-1.4.0.RELEASE.pom>central=
