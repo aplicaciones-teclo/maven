@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <project
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>teclo-reporte-jar</artifactId>
@@ -13,11 +14,11 @@
 		<artifactId>teclo-reporte-build</artifactId>
 		<version>v100r1</version>
 	</parent>
-	
+
 	<properties>
 		<teclofw.version>o.3.2.9</teclofw.version>
 	</properties>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>mx.com.teclo</groupId>
@@ -29,6 +30,12 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>5.0.9.Final</version><!--$NO-MVN-MAN-VER$ -->
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.geronimo.specs</groupId>
+					<artifactId>geronimo-jta_1.1_spec</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
@@ -58,7 +65,12 @@
 			<version>1.9.2</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			</dependency>
+
 	</dependencies>
-	
+
 
 </project>
