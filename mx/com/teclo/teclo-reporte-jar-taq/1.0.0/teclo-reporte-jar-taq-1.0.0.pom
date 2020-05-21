@@ -15,7 +15,7 @@
 	</parent>
 
 	<properties>
-		<teclofwTaq.version>o.4.0.3</teclofwTaq.version>
+		<teclofwTaq.version>o.4.0.4</teclofwTaq.version>
 	</properties>
 
 	<dependencies>
@@ -29,6 +29,12 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>5.0.9.Final</version><!--$NO-MVN-MAN-VER$ -->
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.geronimo.specs</groupId>
+					<artifactId>geronimo-jta_1.1_spec</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
